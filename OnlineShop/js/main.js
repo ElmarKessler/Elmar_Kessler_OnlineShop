@@ -4,6 +4,7 @@ let cart = document.querySelector(".cart");
 let closeCart = document.querySelector("#close-cart");
 // Open Cart
 cartIcon.onclick = () => {
+  updatetotal();
   cart.classList.add("active");
 };
 // Close Cart
@@ -43,30 +44,6 @@ function ready() {
   document
   .getElementsByClassName("btn-checkout")[0].addEventListener("click", checkoutButtonClicked);
 }
-// // Buy Button
-// function checkoutButtonClicked() { 
-//     var containerHTML = '<div class="container">' +
-//     '<form action="">' +
-//         '<div class="row">' +
-//             '<div class="col">' +
-//                 '<input type="text" placeholder="Name">' +
-//             '</div>' +
-//             '<div class="col">' +
-//                 '<input type="text" placeholder="E-Mail">' +
-//             '</div>' +
-//             '<div class="col">' +
-//                 '<button type="submit">Absenden</button>' +
-//             '</div>' +
-//         '</div>' +
-//     '</form>' +
-// '</div>';
-
-// // Erstellen des HTML-Elements und Hinzufügen zum Body der Seite
-// var containerElement = document.createElement('div');
-// containerElement.innerHTML = containerHTML;
-// document.body.appendChild(containerElement);
-
-// }
 
 // Remove Items From Cart
 function removeCartItem(event) {
@@ -124,6 +101,8 @@ cartShopBox
 cartShopBox
   .getElementsByClassName("cart-quantity")[0]
   .addEventListener("change", quantityChanged);
+
+
 }
 // Update Total
 function updatetotal() {
@@ -138,11 +117,29 @@ function updatetotal() {
     var price = parseFloat(priceElement.innerText.replace("$", ""));
     var quantity = quantityElement.value;
     total = total + price * quantity;
+    var quantityElement = cartBox.length;
+    document.getElementById("cartQuantity").innerText = quantity;
   }
 
-    // If price Contain some Cents Value
-    total = total.toFixed(2);
+  // If price contains some cents value
+  total = total.toFixed(2);
 
-    document.getElementsByClassName("total-price")[0].innerText = "$" + total;
+  document.getElementsByClassName("total-price")[0].innerText = "$" + total;
+
+  // Hide or show checkout button based on the total value
+  var checkoutButton = document.getElementById("checkoutButton");
+  if (total > 0) {
+    checkoutButton.style.display = "block";
+  } else {
+    checkoutButton.style.display = "none";
+  }
 }
+
+
+
+
+
+
+
+
 
