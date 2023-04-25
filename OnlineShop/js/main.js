@@ -20,7 +20,7 @@ if (document.readyState == "loading") {
 
 // Making Function
 function ready() {
-  // Reomve Items From Cart
+  // Remove Items From Cart
   var removeCartButtons = document.getElementsByClassName("cart-remove");
   console.log(removeCartButtons);
   for (var i = 0; i < removeCartButtons.length; i++) {
@@ -39,19 +39,34 @@ function ready() {
     var button = addCart[i];
     button.addEventListener("click", addCartClicked);
   }
-  // Buy Button Work
+  // Checkout Button Work
   document
-  .getElementsByClassName("btn-buy")[0].addEventListener("click", buyButtonClicked);
+  .getElementsByClassName("btn-checkout")[0].addEventListener("click", checkoutButtonClicked);
 }
-// Buy Button
-function buyButtonClicked() { 
-  alert('Your Order is placed');
-  var cartContent = document.getElementsBvClassName('cart-content')[0];
-  while (cartContent.hasChildNodes()){
-       cartContent.removeChild(cartContent.firstChild);
-}
-updatetotal();
-}
+// // Buy Button
+// function checkoutButtonClicked() { 
+//     var containerHTML = '<div class="container">' +
+//     '<form action="">' +
+//         '<div class="row">' +
+//             '<div class="col">' +
+//                 '<input type="text" placeholder="Name">' +
+//             '</div>' +
+//             '<div class="col">' +
+//                 '<input type="text" placeholder="E-Mail">' +
+//             '</div>' +
+//             '<div class="col">' +
+//                 '<button type="submit">Absenden</button>' +
+//             '</div>' +
+//         '</div>' +
+//     '</form>' +
+// '</div>';
+
+// // Erstellen des HTML-Elements und Hinzufügen zum Body der Seite
+// var containerElement = document.createElement('div');
+// containerElement.innerHTML = containerHTML;
+// document.body.appendChild(containerElement);
+
+// }
 
 // Remove Items From Cart
 function removeCartItem(event) {
@@ -130,3 +145,4 @@ function updatetotal() {
 
     document.getElementsByClassName("total-price")[0].innerText = "$" + total;
 }
+
