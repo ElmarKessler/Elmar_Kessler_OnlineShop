@@ -88,7 +88,7 @@ var cartBoxContent = `
                             <div class="detail-box">
                             <div class="cart-product-title">${title}</div>
                             <div class="cart-price">${price}</div>
-                             <input type="number" value="1" class="cart-quantity">
+                            <input type="number" value="1" class="cart-quantity">
                             </div>
                         <!-- Remove Cart -->
                         <i class='bx bxs-trash-alt cart-remove'></i>`;
@@ -117,8 +117,8 @@ function updatetotal() {
     var price = parseFloat(priceElement.innerText.replace("$", ""));
     var quantity = quantityElement.value;
     total = total + price * quantity;
-    var quantityElement = cartBox.length;
-    document.getElementById("cartQuantity").innerText = quantity;
+    // var quantityElement = cartBox.length;
+    // document.getElementById("cartQuantity").innerText = quantity;
   }
 
   // If price contains some cents value

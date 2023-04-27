@@ -221,11 +221,19 @@ header {
     background: hsl(249, 32%, 17%);
 }
 
+.form-group.row {
+   
+   
+  }
+  .wraper{
+    display: flex;
+  }
+  #checkoutIcon {
+    margin-left: 50px;
+    font-size: 3rem;
+  }
 
-#checkout-icon {
-    font-size: 1.8rem;
-    cursor: pointer;
-}
+
 /* Checkout */
 .checkout {
     position: fixed;
@@ -268,3 +276,10 @@ header {
 .add-checkout:hover {
     background: hsl(249, 32%, 17%);
 }
+.border {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-top: 1px solid var(--text-color);
+   }
