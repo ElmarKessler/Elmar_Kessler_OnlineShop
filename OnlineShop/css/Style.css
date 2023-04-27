@@ -13,9 +13,9 @@
 }
 
 :root {
-    --main-color: #fd4646;
+    --main-color: #f63636;
     --text-color: #171427;
-    --bg-color: #fff;
+    --bg-color: hsla(89, 22%, 81%, 0.96);
 }
 
 img {
@@ -176,7 +176,7 @@ header {
 /* Shop Content */
 .shop-content {
     display: grid;
-    grid-template-columns: repeat (auto-fit, minmax (220px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
     gap: 1.5rem;
 }
 
@@ -221,19 +221,9 @@ header {
     background: hsl(249, 32%, 17%);
 }
 
-.form-group.row {
-   
-   
-  }
   .wraper{
     display: flex;
   }
-  #checkoutIcon {
-    margin-left: 50px;
-    font-size: 3rem;
-  }
-
-
 /* Checkout */
 .checkout {
     position: fixed;
@@ -283,3 +273,12 @@ header {
     margin-bottom: 1.5rem;
     border-top: 1px solid var(--text-color);
    }
+   #checkoutIconUser {
+    margin-left: 1000px;
+    font-size: 50rem;
+  }
+ 
+  #userIcon {
+    margin-left: 50px;
+    font-size: 4rem;
+  }
