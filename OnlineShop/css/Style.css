@@ -31,13 +31,16 @@ body {
     margin: auto;
     width: 100%;
 }
-
-section {
+.category {
+    padding: 4rem 0 3rem;
+   
+}
+.section {
     padding: 4rem 0 3rem;
 }
 
 /* Header */
-header {
+/* header {
     position: fixed;
     top: 0;
     left: 0;
@@ -45,14 +48,14 @@ header {
     background: var(--bg-color);
     box-shadow: 0 1px 4px hsl(0 4% 15% / 10%);
     z-index: 100;
-}
+} */
 
-.nav {
+/* .nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px 0;
-}
+} */
 
 .logo {
     font-size: 1.1rem;
@@ -273,12 +276,28 @@ header {
     margin-bottom: 1.5rem;
     border-top: 1px solid var(--text-color);
    }
-   #checkoutIconUser {
-    margin-left: 1000px;
-    font-size: 50rem;
+
+   #userIcon {
+    margin-left: 70px;
+    font-size: 2rem;
   }
- 
-  #userIcon {
-    margin-left: 50px;
-    font-size: 4rem;
+  #emailIcon {
+    margin-left: 70px;
+    font-size: 2rem;
+  }
+  #addressIcon {
+    margin-left: 70px;
+    font-size: 2rem;
+  }
+  #cityIcon {
+    margin-left: 70px;
+    font-size: 2rem;
+  }
+  #locationIcon {
+    margin-left: 70px;
+    font-size: 2rem;
+  }
+  #countryIcon {
+    margin-left: 70px;
+    font-size: 2rem;
   }
