@@ -57,6 +57,7 @@ header {
     padding: 8px 0;
     margin: auto;
     width: 90%;
+    
 }
 
 .logo {
@@ -68,6 +69,7 @@ header {
 #cart-icon {
     font-size: 1.8rem;
     cursor: pointer;
+    margin-left: 129px;
 }
 /* Cart */
 .cart {
@@ -98,6 +100,11 @@ header {
     align-items: center;
     gap: 1rem;
     margin-top: 1rem;
+}
+.cart-content {
+    max-height: calc(100vh - 200px);
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .cart-img {
@@ -146,14 +153,15 @@ header {
   }
   .btn-checkout {
     display: flex;
-    margin: 1.5rem auto;
+    margin: 0.5rem auto;
     padding: 12px 20px;
     border: none;
-    background: var(--main-color);                                                                                                                              
-   color: var(--bg-color);
-   font-size: 1rem;
-   font-weight: 500; 
-   cursor: pointer;
+    background: var(--main-color);
+    color: var(--bg-color);
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    margin-bottom: 1rem;
   }
   .btn-checkout:hover {
     background: var(--text-color);
@@ -257,6 +265,12 @@ header {
     font-weight: 600;
     margin-top: 2rem;
 }
+
+.checkout-content {
+    max-height: calc(100vh - 200px);
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
 .add-checkout {
     position: absolute;
     bottom: 0;
