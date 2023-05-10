@@ -58,6 +58,11 @@ header {
     margin: auto;
     width: 90%;
 }
+.navCategories{
+    margin-top: 7px;
+    margin-left: 8px;
+    font-weight: 600;
+}
 .logo {
     font-size: 1.6rem;
     color: var(--text-color);
@@ -91,6 +96,7 @@ header {
     font-size: 1.5rem;
     font-weight: 600;
     margin-top: 2rem;
+    margin-bottom: 1rem;
 }
 
 .cart-box {
@@ -130,7 +136,7 @@ header {
   .cart-quantity{
     border: 1px solid var(--text-color); 
     outline-color: var(--main-color);
-   width: 2.4rem;
+   width: 3.8rem;
    text-align: center;
    font-size: 1rem;
    border-radius: 10px; background-color: #ffffff; padding: 2px;
@@ -155,7 +161,7 @@ header {
   }
   .btn-checkout {
     display: flex;
-    margin: 0.5rem auto;
+    margin: 1.5rem auto;
     padding: 12px 20px;
     border: none;
     background: var(--main-color);
@@ -270,6 +276,7 @@ header {
     font-size: 1.5rem;
     font-weight: 600;
     margin-top: 2rem;
+    margin-bottom: 1rem;
 }
 
 .checkout-content {
