@@ -112,6 +112,9 @@ header {
     overflow-y: auto;
     overflow-x: hidden;
 }
+.cart-content::-webkit-scrollbar {
+    width: 0px;
+  }
 
 .cart-img {
     width: 100px;
@@ -283,7 +286,12 @@ header {
     max-height: calc(100vh - 200px);
     overflow-y: auto;
     overflow-x: hidden;
+    
   }
+  .checkout-content::-webkit-scrollbar {
+    width: 0px;
+  }
+  
 .add-checkout {
     position: absolute;
     bottom: 0;
@@ -304,6 +312,28 @@ header {
     margin-bottom: 1.5rem;
     border-top: 1px solid var(--text-color);
    }
+   .buy {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+    border-top: 1px solid var(--text-color);
+   }
+   .btn-buy {
+    display: flex;
+    margin: 1.5rem auto;
+    padding: 12px 20px;
+    border: none;
+    background: var(--main-color);
+    color: var(--bg-color);
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    border-radius: 10px; background-color:#241313; padding: 20px;
+  }
+  .btn-buy:hover {
+    background: hsl(0, 33%, 17%);
+  }
 
    #userIcon {
     margin-left: 70px;
@@ -328,4 +358,23 @@ header {
   #countryIcon {
     margin-left: 70px;
     font-size: 2rem;
+  }
+  /* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
   }
