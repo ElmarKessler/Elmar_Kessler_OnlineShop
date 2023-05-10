@@ -14,8 +14,8 @@
 
 :root {
     --main-color: #f63636;
-    --text-color: #241313;
-    --bg-color: hsla(175, 28%, 91%, 0.96);
+    --text-color: #371e1e;
+    --bg-color: hsla(39, 25%, 89%, 0.96);
 }
 
 img {
@@ -50,6 +50,34 @@ header {
     z-index: 100;
 }
 
+.section-title {
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 0.8rem;
+    margin-top: 10rem;
+}
+.subtitle{
+  font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 14rem;
+}
+.benefits-title{
+font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1rem;
+    
+}
+.benefits{
+  font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+
+}
+
+   
 .nav {
     display: flex;
     align-items: center;
@@ -62,6 +90,8 @@ header {
     margin-top: 7px;
     margin-left: 8px;
     font-weight: 600;
+    height: 33px;
+    margin-right: 8px;
 }
 .logo {
     font-size: 1.6rem;
@@ -189,13 +219,6 @@ header {
 
 .shop {
     margin-top: 2rem;
-}
-.section-title {
-    font-size: 2rem;
-    font-weight: 600;
-    text-align: center;
-    margin-bottom: 1.5rem;
-    margin-top: 8rem;
 }
 /* Shop Content */
 .shop-content {
