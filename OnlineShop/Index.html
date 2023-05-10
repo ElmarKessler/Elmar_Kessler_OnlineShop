@@ -19,73 +19,16 @@
 <header>
     <!-- Nav -->
     <div class="nav">
-        <a href="#" class="logo">Online Shop</a>
-        <div class="btn-group">
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <a href="Index.html" class="logo">Online Shop</a>
+        <div class="btn-group" style="border-radius: 18px; background-color: #ffffff;">
+            <nav class="navbar navbar-expand-lg">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <a href="suits.html">Suits</a>&nbsp;
-                    <a href="coats.html">Coats</a>&nbsp;
-                    <a href="shoes.html">Shoes</a>&nbsp;
-                    <a href="watches.html">Watches</a>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="suits.html" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false"style="font-weight: bold;">
-                            Suits
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#category1"><a href="suits.html">Go to target page</a></a></li>
-                            <li><a class="dropdown-item" href="#category2">Business</a></li>
-                            <li><a class="dropdown-item" href="#category3">Casual</a></li>
-                            <li><a class="dropdown-item" href="#category4">Tuxedo</a></li>
-                            <li><a class="dropdown-item" href="#category5">Slim-fit</a></li>
-                            <li><a class="dropdown-item" href="#category6">Three-piece</a></li>
-                        </ul>
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false"style="font-weight: bold;">
-                            Coats
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#category1">Trench</a></li>
-                            <li><a class="dropdown-item" href="#category2">Overcoat</a></li>
-                            <li><a class="dropdown-item" href="#category3">Peacoat</a></li>
-                            <li><a class="dropdown-item" href="#category4">Bomber</a></li>
-                            <li><a class="dropdown-item" href="#category5">Leather</a></li>
-                            <li><a class="dropdown-item" href="#category6">Wool</a></li>
-                        </ul>
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false"style="font-weight: bold;">
-                            Shoes
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#category1">Derby</a></li>
-                            <li><a class="dropdown-item" href="#category2">Oxfords</a></li>
-                            <li><a class="dropdown-item" href="#category3">Brogues</a></li>
-                            <li><a class="dropdown-item" href="#category4">Monk strap</a></li>
-                            <li><a class="dropdown-item" href="#category5">Loafers</a></li>
-                            <li><a class="dropdown-item" href="#category6">Sneakers</a></li>
-                        </ul>
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false"style="font-weight: bold;">
-                            Watches
-                    </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#category1">Analog</a></li>
-                            <li><a class="dropdown-item" href="#category2">Digital</a></li>
-                            <li><a class="dropdown-item" href="#category3">Chronograph</a></li>
-                            <li><a class="dropdown-item" href="#category4">Diver</a></li>
-                            <li><a class="dropdown-item" href="#category5">Pilot</a></li>
-                            <li><a class="dropdown-item" href="#category6">Dress</a></li>
-                        </ul>
-                    </li>
+                    <div class="navCategories">
+                        <a href="suits.html">Suits</a>&nbsp;
+                        <a href="coats.html">Coats</a>&nbsp;
+                        <a href="shoes.html">Shoes</a>&nbsp;
+                        <a href="shoes.html">Watches</a>&nbsp;
+                    </div>
                 </ul>
             </nav>
         </div>
@@ -118,76 +61,86 @@
 
         <!-- Checkout -->
         <div class="checkout">
-            <h2 class="checkout-title">Checkout</h2>
 
+            <h2 class="checkout-title">Checkout</h2>
             <!-- Border -->
             <div class="border"></div>
 
 
+
             <!-- Content -->
-        
-            <h5>User Information</h5>
-            <br>
 
             <form action="" class="checkout-content">
+                <h5>User Information</h5>
+                <br>
                 <div class="form-group row">
-                    <label for="fullName" class="col-sm-2 col-form-label">Full Name</label>
+                    <label for="fullName" class="col-sm-12 col-form-label">Prename</label>
                     <div class="wraper">
-                        <div class="col-sm-8">
-                            <input type="text" class="form-control" id="fullName" placeholder="John Doe">
+                        <div class="col-sm-12">
+                            <input type="text" class="form-control" id="fullName" placeholder="John">
                         </div>
-                        <i class='bx bxs-user-check' id="userIcon"></i>
+                        <!-- <i class='bx bxs-user-check' id="userIcon"></i> -->
                     </div>
                 </div>
 
                 <div class="form-group row">
-                    <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+                    <label for="fullName" class="col-sm-12 col-form-label">Name</label>
                     <div class="wraper">
-                        <div class="col-sm-10">
+                        <div class="col-sm-12">
+                            <input type="text" class="form-control" id="fullName" placeholder="Doe">
+                        </div>
+                        <!-- <i class='bx bxs-user-check' id="userIcon"></i> -->
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="inputEmail" class="col-sm-12 col-form-label">Email</label>
+                    <div class="wraper">
+                        <div class="col-sm-12">
                             <input type="email" class="form-control" id="inputEmail" placeholder="example@example.com">
                         </div>
-                        <i class='bx bxs-user-rectangle' id="emailIcon"></i>
+                        <!-- <i class='bx bxs-user-rectangle' id="emailIcon"></i> -->
                     </div>
                 </div>
 
                 <div class="form-group row">
-                    <label for="inputAddress" class="col-sm-2 col-form-label">Address</label>
+                    <label for="inputAddress" class="col-sm-12 col-form-label">Address</label>
                     <div class="wraper">
-                        <div class="col-sm-10">
+                        <div class="col-sm-12">
                             <input type="text" class="form-control" id="inputAddress"
                                 placeholder="Room - Street - Locality">
                         </div>
-                        <i class='bx bxs-edit-location' id="addressIcon"></i>
+                        <!-- <i class='bx bxs-edit-location' id="addressIcon"></i> -->
                     </div>
                 </div>
 
                 <div class="form-group row">
-                    <label for="inputCity" class="col-sm-2 col-form-label">City</label>
+                    <label for="inputCity" class="col-sm-12 col-form-label">City</label>
                     <div class="wraper">
-                        <div class="col-sm-10">
+                        <div class="col-sm-12">
                             <input type="text" class="form-control" id="inputCity" placeholder="Zurich">
                         </div>
-                        <i class='bx bx-buildings' id="cityIcon"></i>
+                        <!-- <i class='bx bx-buildings' id="cityIcon"></i> -->
                     </div>
                 </div>
 
                 <div class="form-group row">
-                    <label for="inputZipCode" class="col-sm-2 col-form-label">Zip Code</label>
+                    <label for="inputZipCode" class="col-sm-12 col-form-label">Zip Code</label>
                     <div class="wraper">
-                        <div class="col-sm-4">
+                        <div class="col-sm-12">
                             <input type="text" class="form-control" id="inputZipCode" placeholder="123 456">
                         </div>
-                        <i class='bx bxs-location-plus' id="locationIcon"></i>
+                        <!-- <i class='bx bxs-location-plus' id="locationIcon"></i> -->
                     </div>
                 </div>
 
                 <div class="form-group row">
-                    <label for="inputState" class="col-sm-2 col-form-label">Country</label>
+                    <label for="inputState" class="col-sm-12 col-form-label">Country</label>
                     <div class="wraper">
-                        <div class="col-sm-4">
+                        <div class="col-sm-12">
                             <input type="text" class="form-control" id="inputState" placeholder="Switzerland">
                         </div>
-                        <i class='bx bx-world' id="countryIcon"></i>
+                        <!-- <i class='bx bx-world' id="countryIcon"></i> -->
                     </div>
                 </div>
                 <br>
@@ -196,71 +149,79 @@
                 </div>
                 <br>
                 <div class="form-group row">
-                    <label for="inputCardName" class="col-sm-2 col-form-label">Name on Card</label>
+                    <label for="inputCardName" class="col-sm-12 col-form-label">Name on
+                        Card</label>
                     <div class="wraper">
-                        <div class="col-sm-10">
+                        <div class="col-sm-12">
                             <input type="text" class="form-control" id="inputCardName" placeholder="Mr. John Doe">
-                        </div>
-                        <i class='bx bxs-user-check' id="chekoutIconUser"></i>
-                    </div>
-                </div>
 
-                <div class="form-group row">
-                    <label for="inputCardNumber" class="col-sm-2 col-form-label">Credit Card Number</label>
-                    <div class="wraper">
-                        <div class="col-sm-10">
-                            <input type="number" class="form-control" id="inputCardNumber"
-                                placeholder="1111-2222-3333-4444">
                         </div>
-                        <i class='bx bxs-user-check' id="chekoutIconUser"></i>
-                    </div>
-                </div>
 
-                <div class="form-group row">
-                    <label for="inputExpMonth" class="col-sm-2 col-form-label">Exp Month</label>
-                    <div class="wraper">
-                        <div class="col-sm-4">
-                            <input type="text" class="form-control" id="inputExpMonth" placeholder="January">
+                        <div class="form-group row">
+                            <label for="inputCardNumber" class="col-sm-12 col-form-label">Credit
+                                Card Number</label>
+                            <div class="wraper">
+                                <div class="col-sm-12">
+                                    <input type="number" class="form-control" id="inputCardNumber"
+                                        placeholder="1111-2222-3333-4444">
+
+                                </div>
+                            </div>
                         </div>
-                        <i class='bx bxs-user-check' id="chekoutIconUser"></i>
-                    </div>
-                </div>
 
-                <div class="form-group row">
-                    <label for="inputExpYear" class="col-sm-2 col-form-label">Exp Year</label>
-                    <div class="wraper">
-                        <div class="col-sm-4">
-                            <input type="number" class="form-control" id="inputExpYear" placeholder="2022">
+                        <div class="form-group row">
+                            <label for="inputExpMonth" class="col-sm-12 col-form-label">Exp
+                                Month</label>
+                            <div class="wraper">
+                                <div class="col-sm-12">
+                                    <input type="text" class="form-control" id="inputExpMonth" placeholder="January">
+
+                                </div>
+                            </div>
                         </div>
-                        <i class='bx bxs-user-check' id="chekoutIconUser"></i>
-                    </div>
-                </div>
 
-                <div class="form-group row">
-                    <label for="inputCVV" class="col-sm-2 col-form-label">CVV</label>
-                    <div class="wraper">
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control" id="inputCVV" placeholder="999">
+                        <div class="form-group row">
+                            <label for="inputExpYear" class="col-sm-12 col-form-label">Exp
+                                Year</label>
+                            <div class="wraper">
+                                <div class="col-sm-12">
+                                    <input type="number" class="form-control" id="inputExpYear" placeholder="2022">
+
+                                </div>
+                            </div>
                         </div>
-                        <i class='bx bxs-user-check' id="chekoutIconUser"></i>
-                    </div>
-                </div>
 
+                        <div class="form-group row">
+                            <label for="inputCVV" class="col-sm-12 col-form-label">CVV</label>
+                            <div class="wraper">
+                                <div class="col-sm-12">
+                                    <input type="text" class="form-control" id="inputCVV" placeholder="999">
+
+                                </div>
+                            </div>
+                        </div>
             </form>
+
             <!-- Checkout Close -->
-  <i class='bx bx-x' id="close-checkout"></i>
+            <i class='bx bx-x' id="close-checkout"></i>
+            <div class="buy">
+            </div>
+            <!-- Checkout Button -->
+            <button type="button" class="btn-buy" id="buyButton">Buy</button>
+
         </div>
-       
+
 </header>
 
 <body>
     <!-- Shop -->
     <section class="shop container">
-        <p class="section-title">Shop Products<p><br>
+        <p class="section-title">Shop Products
+        <p><br>
 
-        <!-- Content -->
+            <!-- Content -->
         <div class="shop-content">
-            <h5 class="category" id="category1">Category 1</h5>
+            <h5 class="category" id="category1">Analog</h5>
             <!-- Box 1 -->
             <div class="product-box">
                 <img src="img/product1.jpg" alt="" class="product-img">
@@ -300,7 +261,7 @@
                 <i class='bx bx-shopping-bag add-cart'></i>
             </div>
 
-            <h5 class="category" id="category2">Category 2</h5>
+            <h5 class="category" id="category2">Digital</h5>
             <!-- Box 6 -->
             <div class="product-box">
                 <img src="img/product1.jpg" alt="" class="product-img">
@@ -337,7 +298,7 @@
                 <i class='bx bx-shopping-bag add-cart'></i>
             </div>
 
-            <h5 class="category" id="category3">Category 3</h5>
+            <h5 class="category" id="category3">Chronograph</h5>
             <!-- Box 11 -->
             <div class="product-box">
                 <img src="img/product1.jpg" alt="" class="product-img">
@@ -374,7 +335,7 @@
                 <i class='bx bx-shopping-bag add-cart'></i>
             </div>
 
-            <h5 class="category" id="category4">Category 4</h5>
+            <h5 class="category" id="category4">Diver</h5>
             <!-- Box 16 -->
             <div class="product-box">
                 <img src="img/product1.jpg" alt="" class="product-img">
@@ -411,7 +372,7 @@
                 <i class='bx bx-shopping-bag add-cart'></i>
             </div>
 
-            <h5 class="category" id="category5">Category 5</h5>
+            <h5 class="category" id="category5">Pilot</h5>
             <!-- Box 21 -->
             <div class="product-box">
                 <img src="img/product1.jpg" alt="" class="product-img">
@@ -448,8 +409,8 @@
                 <i class='bx bx-shopping-bag add-cart'></i>
             </div>
 
-            
-            <h5 class="category" id="category7">Category 6</h5>
+
+            <h5 class="category" id="category6">Dress</h5>
             <!-- Box 26 -->
             <div class="product-box">
                 <img src="img/product1.jpg" alt="" class="product-img">
@@ -479,4 +440,5 @@
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
 </body>
+
 </html>
