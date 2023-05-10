@@ -112,7 +112,7 @@ header {
     overflow-y: auto;
     overflow-x: hidden;
 }
-.cart-content::-webkit-scrollbar {
+.checkout-content::-webkit-scrollbar {
     width: 0px;
   }
 
@@ -310,7 +310,7 @@ header {
     justify-content: flex-end;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
-    border-top: 1px solid var(--text-color);
+    border-top: 1px solid #241313;
    }
    .buy {
     display: flex;
